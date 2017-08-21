@@ -11,7 +11,7 @@
         <div>
             Your Note Taking Preferences<br />
             <br />
-            <asp:RadioButton ID="pencilRadioButton" runat="server" GroupName="NoteChoice" OnCheckedChanged="RadioButton1_CheckedChanged" Text="Pencil" />
+            <asp:RadioButton ID="pencilRadioButton" runat="server" Checked="True" GroupName="NoteChoice" OnCheckedChanged="RadioButton1_CheckedChanged" Text="Pencil" />
             <br />
             <asp:RadioButton ID="penRadioButton" runat="server" GroupName="NoteChoice" Text="Pen" />
             <br />
@@ -20,13 +20,13 @@
             <asp:RadioButton ID="tabletRadioButton" runat="server" GroupName="NoteChoice" Text="Tablet" />
             <br />
             <br />
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+            <asp:Button ID="okButton" runat="server" OnClick="Button1_Click" Text="OK" />
             <br />
             <br />
             <br />
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="resultLabel" runat="server"></asp:Label>
             <br />
-            <asp:Image ID="Image1" runat="server" />
+            <asp:Image ID="resultImage" runat="server" Height="100px" ImageUrl="C:\Users\P076240\documents\visual studio 2017\Projects\DevUCSharpChallenge3\DevUCSharpChallenge3\Images\pen.png" />
         </div>
     </form>
 </body>

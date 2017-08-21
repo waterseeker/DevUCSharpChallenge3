@@ -21,7 +21,22 @@ namespace DevUCSharpChallenge3
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
+            if (pencilRadioButton.Checked)
+            {
+                resultImage.ImageUrl = "Images/pencil.png";
+            }
+            else if (penRadioButton.Checked)
+            {
+                resultImage.ImageUrl = "Images/pen.png";
+            }
+            else if (phoneRadioButton.Checked)
+            {
+                resultImage.ImageUrl = "Images/phone.png";
+            }
+            else  
+            {
+                resultImage.ImageUrl = "Images/tablet.png";
+            }
         }
     }
 }
